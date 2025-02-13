@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/dutchWhite">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_fasting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intermittent_question"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/asparagus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <!-- Fasting Options RadioGroup -->
+    <RadioGroup
+        android:id="@+id/rg_fasting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_fasting_title"
+        app:layout_constraintStart_toStartOf="parent">
+        <RadioButton
+            android:id="@+id/rb_fasting_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"/>
+        <RadioButton
+            android:id="@+id/rb_fasting_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"/>
+    </RadioGroup>
+
+    <!-- Fasting Window Selection Text -->
+    <TextView
+        android:id="@+id/tv_fasting_window_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timeWindow"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/rg_fasting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Fasting Window RadioGroup -->
+    <RadioGroup
+        android:id="@+id/rg_fasting_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tv_fasting_window_title"
+        app:layout_constraintStart_toStartOf="parent">
+        <RadioButton
+            android:id="@+id/rb_12_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12/12"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/rb_14_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14/10"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/rb_16_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16/8"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+        <RadioButton
+            android:id="@+id/rb_18_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="18/6"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+    </RadioGroup>
+
+    <!-- Generate Plan Button -->
+    <Button
+        android:id="@+id/btn_generate_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/generate_program"
+        android:backgroundTint="@color/saffron"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/rg_fasting_window"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

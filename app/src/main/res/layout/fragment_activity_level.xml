@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/dutchWhite">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_activity_level_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_activity_level"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/asparagus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
+
+    <!-- Radio Group with Styled Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/rg_activity_level"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_activity_level_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp">
+
+        <!-- Sedentary -->
+        <RadioButton
+            android:id="@+id/rb_sedentary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sedentary"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Lightly Active -->
+        <RadioButton
+            android:id="@+id/rb_lightly_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lightly Active"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Moderately Active -->
+        <RadioButton
+            android:id="@+id/rb_moderately_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moderately Active"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!--Active-->
+        <RadioButton
+            android:id="@+id/rb_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Active"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Very Active -->
+        <RadioButton
+            android:id="@+id/rb_very_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Very Active"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next_activity_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:backgroundTint="@color/saffron"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/rg_activity_level"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

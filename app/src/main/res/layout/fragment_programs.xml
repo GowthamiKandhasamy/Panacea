@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/dutchWhite">
+
+
+    <TextView
+        android:id="@+id/tv_pick_a_program_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_program"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/asparagus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
+
+    <!-- Radio Group with Styled Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/rg_program_pace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_pick_a_program_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp">
+
+    <!-- Sedentary -->
+    <RadioButton
+        android:id="@+id/rb_steady"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Steady"
+        android:background="@drawable/radio_button_box"
+        android:button="@null"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Lightly Active -->
+    <RadioButton
+        android:id="@+id/rb_relaxed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relaxed"
+        android:background="@drawable/radio_button_box"
+        android:button="@null"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp" />
+
+        <!-- Lightly Active -->
+        <RadioButton
+            android:id="@+id/rb_vigorous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vigorous"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+    </RadioGroup>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btn_save_program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/generate_program"
+        android:backgroundTint="@color/saffron"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/rg_program_pace"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

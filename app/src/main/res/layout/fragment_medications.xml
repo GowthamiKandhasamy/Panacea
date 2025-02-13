@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/dutchWhite">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_medications_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medications"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/asparagus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
+
+    <!-- Radio Group with Styled Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/rg_medications"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_medications_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp">
+
+        <!-- Option 1: Yes -->
+        <RadioButton
+            android:id="@+id/rb_medications_appetite_reducing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/appetite_reducing"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Option 2: No -->
+        <RadioButton
+            android:id="@+id/rb_medications_dietary_fat_reduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dietary_fat_reduction"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Option 3: No, but interested -->
+        <RadioButton
+            android:id="@+id/rb_medications_no_interested"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_interested"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Option 4: No, I don’t plan -->
+        <RadioButton
+            android:id="@+id/rb_medications_no_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next_medications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:backgroundTint="@color/saffron"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/rg_medications"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

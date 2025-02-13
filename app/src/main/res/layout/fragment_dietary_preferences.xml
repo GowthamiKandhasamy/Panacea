@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/dutchWhite">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_dietary_preferences_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dietary_preferences"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/asparagus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
+
+    <!-- Vegan CheckBox -->
+    <CheckBox
+        android:id="@+id/cb_vegan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vegan"
+        android:textColor="@color/black"
+        android:background="@drawable/radio_button_box"
+        app:layout_constraintTop_toBottomOf="@id/tv_dietary_preferences_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:padding="12dp"/>
+
+    <!-- Vegetarian CheckBox -->
+    <CheckBox
+        android:id="@+id/cb_vegetarian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vegetarian"
+        android:textColor="@color/black"
+        android:background="@drawable/radio_button_box"
+        app:layout_constraintTop_toBottomOf="@id/cb_vegan"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Gluten-Free CheckBox -->
+    <CheckBox
+        android:id="@+id/cb_gluten_free"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gluten_free"
+        android:textColor="@color/black"
+        android:background="@drawable/radio_button_box"
+        app:layout_constraintTop_toBottomOf="@id/cb_vegetarian"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Keto CheckBox -->
+    <CheckBox
+        android:id="@+id/cb_keto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/keto"
+        android:textColor="@color/black"
+        android:background="@drawable/radio_button_box"
+        app:layout_constraintTop_toBottomOf="@id/cb_gluten_free"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Mediterranean CheckBox -->
+    <CheckBox
+        android:id="@+id/cb_mediterranean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mediterranean"
+        android:textColor="@color/black"
+        android:background="@drawable/radio_button_box"
+        app:layout_constraintTop_toBottomOf="@id/cb_keto"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next_dietary_preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:backgroundTint="@color/saffron"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/cb_mediterranean"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

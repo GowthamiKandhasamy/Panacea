@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/dutchWhite">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_weight_goals_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight_goals"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/asparagus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
+
+    <!-- Radio Group with Styled Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/rg_weight_goals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_weight_goals_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp">
+
+        <!-- Lose Weight -->
+        <RadioButton
+            android:id="@+id/rb_lose_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lose Weight"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Maintain Weight -->
+        <RadioButton
+            android:id="@+id/rb_maintain_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maintain Weight"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Gain Weight -->
+        <RadioButton
+            android:id="@+id/rb_gain_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gain Weight"
+            android:background="@drawable/radio_button_box"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <!-- Target Weight -->
+    <EditText
+        android:id="@+id/et_target_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/target_weight"
+        android:inputType="number"
+        android:visibility="gone"
+        android:backgroundTint="@color/sage"
+        app:layout_constraintTop_toBottomOf="@id/rg_weight_goals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next_weight_goals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:backgroundTint="@color/saffron"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/et_target_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

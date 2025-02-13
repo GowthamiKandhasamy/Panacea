@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="saffron">#E7B511</color>
+    <color name="oldGold">#E2C15D</color>
+    <color name="dutchWhite">#DCCDA8</color>
+    <color name="sage">#AFB884</color>
+    <color name="asparagus">#76955E</color>
+    <color name="transparent_saffron">#1AE7B511</color>
+    <color name="transparent_asparagus">#3376955E</color>
+</resources>

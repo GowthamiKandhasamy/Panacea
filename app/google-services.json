@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1005109942559",
+    "project_id": "panacea-77062",
+    "storage_bucket": "panacea-77062.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005109942559:android:a6b00cabe9031220a2b82a",
+        "android_client_info": {
+          "package_name": "com.example.userauthentication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsF55JUhhy8KnVTAqjwYBy7tHaN4syTcA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

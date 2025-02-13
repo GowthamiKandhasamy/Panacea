@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">UserAuthentication</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="signup">Sign up</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="redirectToSignup">Not yet registered? Sign up now</string>
+    <string name="redirectToLogin">Already have an account? Login now</string>
+
+
+    <!--For profile setup-->
+    <string name="user_profile_setup">User Profile Setup</string>
+    <string name="next">Next</string>
+    <string name="choose_measurement">Choose System of Measurement</string>
+    <string name="si">SI</string>
+    <string name="american">American Customary</string>
+    <string name="name">Name</string>
+    <string name="height">Height (cm/inches)</string>
+    <string name="weight">Weight (kg/lbs)</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="medications">Do you take any medications to aid weight loss?</string>
+    <string name="appetite_reducing">Yes - Appetite Reducing</string>
+    <string name="dietary_fat_reduction">Yes - Dietary Fat Reduction</string>
+    <string name="no_interested">No, but interested</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="daily_activity_level">Select Your Daily Activity Level</string>
+    <string name="weight_goals">Select Your Weight Goals</string>
+    <string name="target_weight">Target Weight</string>
+    <string name="dietary_preferences">Select All Your Dietary Preferences</string>
+    <string name="vegan">Vegan</string>
+    <string name="keto">Keto</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="gluten_free">Gluten-Free</string>
+    <string name="mediterranean">Mediterranean</string>
+    <string name="intermittent_question">Do you want to follow Intermittent Fasting?</string>
+    <string name="intermittent">Intermittent Fasting</string>
+    <string name="timeWindow">Choose Your Fasting/Resting Time Window</string>
+    <string name="choose_program">Pick Your Program</string>
+    <string name="fasting">Fasting</string>
+    <string name="generate_program">Generate Program</string>
+
+</resources>

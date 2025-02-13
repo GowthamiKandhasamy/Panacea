@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/dutchWhite">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_basic_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basic Details"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/asparagus"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:background="@drawable/radio_button_box"
+        android:padding="12dp"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_basic_details_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <!-- Height Input -->
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/height"
+        android:background="@drawable/radio_button_box"
+        android:padding="12dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Weight Input -->
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/weight"
+        android:background="@drawable/radio_button_box"
+        android:padding="12dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/et_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Age Input -->
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/age"
+        android:background="@drawable/radio_button_box"
+        android:padding="12dp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/et_weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Gender Radio Buttons -->
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/et_age"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:background="@drawable/radio_button_box"
+            android:padding="12dp"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:background="@drawable/radio_button_box"
+            android:padding="12dp"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp" />
+
+    </RadioGroup>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next_basic_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:backgroundTint="@color/saffron"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/rg_gender"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

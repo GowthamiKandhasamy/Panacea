@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/lemon_salad_blurred">
+
+    <!-- Header: TODAY -->
+    <TextView
+        android:id="@+id/todayHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TODAY"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/saffron"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Stats: Calories, Pace, Duration -->
+    <LinearLayout
+        android:id="@+id/statsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/todayHeader"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+        <!-- Calories -->
+        <TextView
+            android:id="@+id/caloriesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Calorie Requirements:"
+            android:background="@drawable/radio_button_box"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/dutchWhite"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/caloriesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 kcal"
+            android:textColor="@color/sage"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Calories -->
+        <TextView
+            android:id="@+id/remainingCaloriesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calories to be consumed:"
+            android:background="@drawable/radio_button_box"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/dutchWhite"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/remainingCaloriesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 kcal"
+            android:textColor="@color/sage"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pace -->
+        <TextView
+            android:id="@+id/paceLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pace:"
+            android:background="@drawable/radio_button_box"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/dutchWhite"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/paceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Null"
+            android:textColor="@color/sage"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Duration -->
+        <TextView
+            android:id="@+id/durationLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duration:"
+            android:background="@drawable/radio_button_box"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/dutchWhite"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/durationValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 months"
+            android:textColor="@color/sage"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <!-- Water Intake Section -->
+    <TextView
+        android:id="@+id/waterIntakeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water Intake"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/saffron"
+        android:layout_below="@id/statsLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:id="@+id/waterIntakeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waterIntakeLabel"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:background="@drawable/radio_button_box"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Water Intake Slider -->
+        <SeekBar
+            android:id="@+id/waterIntakeSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:progress="0"
+            android:max="100"
+            android:thumbTint="@color/saffron"
+            android:progressTint="@color/saffron" />
+
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/waterIntakePlusButton"
+            android:layout_width="55sp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_below="@id/waterIntakeSlider"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/saffron"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Food Intake Section -->
+    <TextView
+        android:id="@+id/foodIntakeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Intake"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/saffron"
+        android:layout_below="@id/waterIntakeContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    <LinearLayout
+        android:id="@+id/foodIntakeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodIntakeLabel"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:background="@drawable/radio_button_box"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <!-- Food Intake Text Field -->
+        <EditText
+            android:id="@+id/foodIntakeInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter the Calories Consumed"
+            android:inputType="number"
+            android:background="@android:color/transparent"
+            android:textColor="@color/sage"
+            android:textColorHint="@color/sage"
+            android:textSize="16sp" />
+        <!-- Plus Button -->
+        <Button
+            android:id="@+id/foodIntakePlusButton"
+            android:layout_width="55sp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/saffron"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/newDayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New day"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/saffron"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/saffron"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>
